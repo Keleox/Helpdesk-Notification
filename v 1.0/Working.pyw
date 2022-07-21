@@ -10,7 +10,7 @@ ticketUpdate = True
 
 #Get API key and sound file name from variables.txt
 try:
-    with open('variables.txt', 'r') as variableFile:
+    with open('data\\variables.txt', 'r') as variableFile:
         global apiValue
         global soundFile
         apiValue = variableFile.readline()
@@ -64,7 +64,7 @@ while True:
             ticketValue = int(latestTicket.readline())
             latestTicket.close()
         ticket_data = fresh.tickets.get_ticket(ticket_number = ticketValue)
-        playsound(soundFile)
+        playsound('data\\' + soundFile)
         with open('latestTicket.txt', 'w+') as latestTicket:
             latestTicket.write(str(ticketValue+1))
             latestTicket.close()
