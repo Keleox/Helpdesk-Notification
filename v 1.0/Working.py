@@ -20,6 +20,7 @@ try:
         variableFile.close()
 except:
     print("Error: Error getting API key or sound file name")
+    input()
     sys.exit()
 
 #Connect to the FreshService API with Freshpy
@@ -36,12 +37,12 @@ try:
     with open('data\\latestTicket.txt', 'r+') as latestTicket:
         ticketValue = int(latestTicket.readline())
         latestTicket.close()
-    ticket_data = fresh.tickets.get_ticket(ticket_number = 1)
+        ticket_data = fresh.tickets.get_ticket(ticket_number = 31)
     if ticket_data.get('code') == 'access_denied':
         raise Exception
 except:
-   print("Access Denied")
-   sys.exit()
+    print("Access Denied")
+    sys.exit()
 
 #General logic of the program: It checks to see if a ticket with the value 1+ of the current highest ticket number exists.
 #If it does, the program will update the text file and run again. If it errors, then the program is up to date.
