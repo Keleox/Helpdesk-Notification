@@ -14,12 +14,11 @@ Installation instructions:
 5.	To setup the program, go to Windows' Task Scheduler, then "Create Task..."
   5.1 Under General, name the task.
   5.2 Under Trigger, create a new trigger with the following settings:
-    "Begin the task" -> "At log on"
-    "Settings" -> "Specific users:" -> Select yourself
+    "Begin the task" -> "On a schedule"
     "Advanced settings" -> "Repeat task every:" -> type in "1 minute" to the box
     "Advanced settings" -> "for a duration of:" -> "Indefinitely"
   5.3 Under Actions, create a new action with the following settings:
     "Program/script:" -> "JsonVersion.pyw"
     "Start in (optional):" -> Put the path to the directory with "JsonVersion.pyw". With the current file structure, it should end with "...\Helpdesk-Notification-main\v1.0\"
 
-6. With that, you should be good to go!
+6. If the program plays the sound file after you're done setting up, it's working properly.
