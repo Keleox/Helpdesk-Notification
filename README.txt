@@ -7,6 +7,19 @@ Installation instructions:
   b.	py -m pip install playsound==1.2.2
   c.	py -m pip install tendo
 
-3.	In the “variables.txt” file, you can put the name of the sound file you want to use (if my weeb one isn’t good enough for you) and for your API key. The API key can be found by going to the “Profile Settings” page on the helpdesk website. An alternate sound file should also be placed in the folder, so the program can find it.
+3. Download the folder and put it in a location where the file name doesn't have any spaces (i.e. somewhere not backed up by OneDrive. I use my "Downloads" folder).
 
-4.	Once all that is done, you can double-click "Working.py" and it will run the program. If you would prefer a windowless version, change the file extension to ".pyw". Note: the only way to check that it is running when in windowless mode is to check task manager.
+4.	In the “data.json” file, you can put the name of the sound file you want to use (if my weeb one isn’t good enough for you) and for your API key. The API key can be found by going to the “Profile Settings” page on the helpdesk website. An alternate sound file should also be placed in the "data" folder, so the program can find it.
+
+5.	To setup the program, go to Windows' Task Scheduler, then "Create Task..."
+  5.1 Under General, name the task.
+  5.2 Under Trigger, create a new trigger with the following settings:
+    "Begin the task" -> "At log on"
+    "Settings" -> "Specific users:" -> Select yourself
+    "Advanced settings" -> "Repeat task every:" -> type in "1 minute" to the box
+    "Advanced settings" -> "for a duration of:" -> "Indefinitely"
+  5.3 Under Actions, create a new action with the following settings:
+    "Program/script:" -> "JsonVersion.pyw"
+    "Start in (optional):" -> Put the path to the directory with "JsonVersion.pyw". With the current file structure, it should end with "...\Helpdesk-Notification-main\v1.0\"
+
+6. With that, you should be good to go!
