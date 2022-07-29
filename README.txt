@@ -1,17 +1,17 @@
 Installation instructions:
 
-1.	Download Python (https://www.python.org/)
+1. Download Python (https://www.python.org/)
 
-2.	Open cmd and run the following commands (These are three libraries used by the program)
+2. Open cmd and run the following commands (These are three libraries used by the program)
     py -m pip install freshpy
     py -m pip install playsound==1.2.2
     py -m pip install tendo
 
 3. Download the folder and put it in a location where the file name doesn't have any spaces (i.e. somewhere not backed up by OneDrive. I use my "Downloads" folder).
 
-4.	In the “data.json” file, you can put the name of the sound file you want to use (if my weeb one isn’t good enough for you) and your API key. The API key can be found on the right side of the “Profile Settings” page on the helpdesk website. Also, if you use an alternate sound file, it should also be placed in the "data" folder so the program can find it.
+4. In the “data.json” file, you can put the name of the sound file you want to use (if my weeb one isn’t good enough for you) and your API key. The API key can be found on the right side of the “Profile Settings” page on the helpdesk website. Also, if you use an alternate sound file, it should also be placed in the "data" folder so the program can find it.
 
-5.	To setup the program, go to Windows' Task Scheduler, then "Create Task..."
+5. To setup the program, go to Windows' Task Scheduler, then "Create Task..."
   5.1 Under General, name the task.
   5.2 Under Trigger, create a new trigger with the following settings:
     "Begin the task" -> "On a schedule"
