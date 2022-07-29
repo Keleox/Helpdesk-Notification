@@ -9,7 +9,7 @@ Installation instructions:
 
 3. Download the folder and put it in a location where the file name doesn't have any spaces (i.e. somewhere not backed up by OneDrive. I use my "Downloads" folder).
 
-4.	In the “data.json” file, you can put the name of the sound file you want to use (if my weeb one isn’t good enough for you) and your API key. The API key can be found on the right side of the “Profile Settings” page on the helpdesk website. Also, if you use an alternate sound file, itshould also be placed in the "data" folder so the program can find it.
+4.	In the “data.json” file, you can put the name of the sound file you want to use (if my weeb one isn’t good enough for you) and your API key. The API key can be found on the right side of the “Profile Settings” page on the helpdesk website. Also, if you use an alternate sound file, it should also be placed in the "data" folder so the program can find it.
 
 5.	To setup the program, go to Windows' Task Scheduler, then "Create Task..."
   5.1 Under General, name the task.
@@ -22,3 +22,7 @@ Installation instructions:
     "Start in (optional):" -> Put the path to the directory with "JsonVersion.pyw". With the current file structure, it should end with "...\Helpdesk-Notification-main\v1.0"
 
 6. If the program plays the sound file after you're done setting up, it's working properly.
+
+Common Troubleshooting Problems:
+-The dialogue box to ask what program you want to run the script with comes up: Check step 5.3. The Program/script line should only have the program name, not the path.
+-The sound file is playing every minute: Check that you put in your API key and removed the brackets. If the Latest Ticket value is super high (>2000), this is most likely the problem.
