@@ -18,11 +18,12 @@ Installation instructions:
     "Advanced settings" -> "Repeat task every:" -> type in "1 minute" to the box
     "Advanced settings" -> "for a duration of:" -> "Indefinitely"
   5.3 Under Actions, create a new action with the following settings:
-    "Program/script:" -> put "JsonVersion.pyw"
-    "Start in (optional):" -> Put the path to the directory with "JsonVersion.pyw". With the current file structure, it should end with "...\Helpdesk-Notification-main\v1.0"
+    "Program/script:" -> put select the "Pythonw.exe"
+    "Add arguments (optional):" - > Select the "APIVersion.pyw" script
+    "Start in (optional):" -> Put the path to the directory with "APIVersion.pyw". With the current file structure, it should end with "...\HelpdeskCheck"
 
 6. If the program plays the sound file after you're done setting up, it's working properly.
 
 Common Troubleshooting Problems:
 -The dialogue box to ask what program you want to run the script with comes up: Check step 5.3. The Program/script line should only have the program name, not the path.
--The sound file is playing every minute: Check that you put in your API key and removed the brackets. If the Latest Ticket value is super high (>2000), this is most likely the problem.
+-The sound file is playing every minute: Check that you put in your API key and removed the brackets. If the Latest Ticket value is super high, the program might just be catching the Latest Ticket value up. You can manually update the value to speed the process up.
